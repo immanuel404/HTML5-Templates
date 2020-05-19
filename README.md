@@ -5,4 +5,4 @@ _built with html, css and javascript
 
 Completed Template: https://themeplanet.com/webcitizen404/88173-photo-ultra-template
 
-Complete Template: https://popularfx.com/themes/html/creative/Photo_Ultra_Template
+Completed Template: https://popularfx.com/themes/html/creative/Photo_Ultra_Template

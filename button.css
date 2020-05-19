@@ -1,0 +1,259 @@
+/*@Author: Emmanuel A.O
+
+This file contains the styling for the Homepage of the Designers Dream Template, this
+This files contents are outlined below.
+
+ 1.  TextChange Button
+ 2.  Button Redirect
+ 3.  Change Page Color
+ 4.  Homepage
+ 5.  Footer
+ 6.  Filter Style
+ 7.  Phone Format
+*/
+
+/*1.Text Change Button (HOMEPAGE)*/
+#textChange {
+	background-color:#44c767;
+	border-radius:26px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	padding:8px 9px;
+	text-decoration:none;
+	transition: 0.5s;
+	margin:20px;
+}
+#textChange:hover {
+	background-color:transparent;
+	font-size:15px;
+	color: black;
+}
+/*2.Button Redirect (HOMEPAGE)*/
+#redirect1 {
+	background:linear-gradient(to bottom, #090a09 5%, #636363 100%);
+	background-color:#090a09;
+	border-radius:16px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:12px;
+	text-decoration:none;
+	transition: 0.5s;
+}
+#redirect1:hover {
+	color: green;
+	font-size:19px;
+}
+/*3.Change Page Colour (HOMEPAGE)*/
+#colorChange {
+	background:linear-gradient(to bottom, #090a09 5%, #636363 100%);
+	background-color:#090a09;
+	border-radius:16px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:12px;
+	text-decoration:none;
+	transition: 0.5s;
+}
+#colorChange:hover {
+	font-size:19px;
+	color: lightblue;
+}
+
+/*4.(HOMEPAGE)*/
+#buyButton1 {
+	background:linear-gradient(to bottom, #090a09 5%, #636363 100%);
+	background-color:#090a09;
+	border-radius:13px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	padding:9px 19px;
+	text-decoration:none;
+	transition: 0.5s;
+}
+#buyButton1:hover {
+	font-size:20px;
+	color: lightblue;
+}
+/*(HOMEPAGE)*/
+#buyButton2 {
+	background:linear-gradient(to bottom, #090a09 5%, #636363 100%);
+	background-color:#090a09;
+	border-radius:13px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	padding:9px 19px;
+	text-decoration:none;
+	transition: 0.5s;
+}
+#buyButton2:hover {
+	font-size:20px;
+	color: lightblue;
+}
+/*(HOMEPAGE)*/
+#buyButton3 {
+	background:linear-gradient(to bottom, #090a09 5%, #636363 100%);
+	background-color:#090a09;
+	border-radius:13px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:18px;
+	padding:9px 19px;
+	text-decoration:none;
+	transition: 0.5s;
+}
+#buyButton3:hover {
+	font-size:20px;
+	color: lightblue;
+}
+/*5.Footer Button (HOMAPAGE, PORTFOLIO & CONTACT PAGE)*/
+#redirect2 {
+	background:linear-gradient(to bottom, #090a09 5%, #636363 100%);
+	background-color:#090a09;
+	border-radius:8px;
+	border:1px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding: 10px;
+	text-decoration:none;
+	transition: 0.5s;
+}
+#redirect2:hover {
+	color: green;
+	font-size:19px;
+}
+
+/* 6. 1st-Filter Style Button (PORFOLIO)*/
+#filterChange1 {
+	background-color: transparent;
+	border-radius: 12px;
+	border:2px solid black;
+	cursor:pointer;
+	color: white;
+	font-size: 13px;
+	padding: 8px 9px;
+	text-decoration:none;
+	transition: 0.5s;
+	margin:25px;
+	filter: drop-shadow(6px 6px 8px lightgray);
+}
+#filterChange1:hover {
+	background-color: yellow;
+	font-size: 15px;
+	color: black;
+}
+/*7.Phone Format*/
+@media (max-width: 700px) {
+/* 1st-Filter Style Button (PORFOLIO)*/
+#filterChange1 {
+	background-color: transparent;
+	border-radius: 5px;
+	border:2px solid black;
+	cursor:pointer;
+	color: white;
+	font-size: 13px;
+	padding: 7px;
+	text-decoration:none;
+	transition: 0.5s;
+	margin:7px;
+	filter: drop-shadow(2px 2px 5px lightgray);
+}
+#filterChange1:hover {
+	background-color: yellow;
+	font-size: 10px;
+	color: black;
+}
+}
+/* 2nd-Filter Style Button (PORFOLIO)*/
+#filterChange2 {
+	background-color: transparent;
+	border-radius: 12px;
+	border:2px solid black;
+	cursor:pointer;
+	color: white;
+	font-size: 13px;
+	padding: 8px 9px;
+	text-decoration:none;
+	transition: 0.5s;
+	margin:25px;
+	filter: drop-shadow(6px 6px 8px lightgray);
+}
+#filterChange2:hover {
+	background-color: yellow;
+	font-size: 15px;
+	color: black;
+}
+/*Phone Format*/
+@media (max-width: 700px) {
+/* 2nd-Filter Style Button (PORFOLIO)*/
+#filterChange2 {
+	background-color: transparent;
+	border-radius: 5px;
+	border:2px solid black;
+	cursor:pointer;
+	color: white;
+	font-size: 13px;
+	padding: 7px;
+	text-decoration:none;
+	transition: 0.5s;
+	margin:7px;
+	filter: drop-shadow(2px 2px 5px lightgray);
+}
+#filterChange2:hover {
+	background-color: yellow;
+	font-size: 10px;
+	color: black;
+}
+}
+/* 3rd-Filter Style Button (PORFOLIO)*/
+#filterChange3 {
+	background-color: transparent;
+	border-radius: 12px;
+	border:2px solid black;
+	cursor:pointer;
+	color: white;
+	font-size: 13px;
+	padding: 8px 9px;
+	text-decoration:none;
+	transition: 0.5s;
+	margin:25px;
+	filter: drop-shadow(6px 6px 8px lightgray);
+}
+#filterChange3:hover {
+	background-color: yellow;
+	font-size: 15px;
+	color: black;
+}
+/*Phone Format*/
+@media (max-width: 700px) {
+/* 3rd-Filter Style Button (PORTFOLIO)*/
+#filterChange3 {
+	background-color: transparent;
+	border-radius: 5px;
+	border:2px solid black;
+	cursor:pointer;
+	color: white;
+	font-size: 13px;
+	padding: 7px;
+	text-decoration:none;
+	transition: 0.5s;
+	margin:7px;
+	filter: drop-shadow(2px 2px 5px lightgray);
+}
+#filterChange3:hover {
+	background-color: yellow;
+	font-size: 10px;
+	color: black;
+}
+}

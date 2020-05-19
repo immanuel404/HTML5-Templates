@@ -1,0 +1,582 @@
+/*@Author: Emmanuel A.O
+
+This file contains the styling for the Homepage of the Designers Dream Template, this
+This files contents are outlined below.
+
+ 1.  HTML
+ 2.  Navbar
+ 3.  ImageHead Area
+ 4.  Social Media Icons
+ 5.  Body Icons
+ 6.  First Section
+ 7.  Second Section
+ 8.  Third Section
+ 9.  Offer Area
+ 10. Quote Slider
+ 11. Slider Phone Format
+ 12. Footer Area
+
+ 13. Phone Format
+ 14. ImageHead Area
+ 15. Social Media Icons
+ 16. Body Icons
+ 18. First Section
+ 19. Second Section
+ 20. Third Section
+ 21. Footer Area
+
+ 22. Tablet Format
+ 23. First Section
+ 24. Second Section
+*/
+
+
+/*1.HTML*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family:Times New Roman;
+	overflow-x: hidden;
+}
+
+/*2.Navbar*/
+/*navbar link*/
+a.nav-link:hover {
+	transition: 0.5s;
+}
+/*navbar structure*/
+.navbar {
+	opacity: 0.7;
+	font-size: 20px; 
+	font-weight: bold;
+}
+/*navbar hover*/
+.navbar-dark .navbar-nav .nav-link:hover {
+	color:#197CEC;
+}
+
+/*3.ImageHead Area*/
+/*image head structure*/
+.head {
+	background: url(img/head.jpg) no-repeat center center;
+	background-size: cover;
+	filter: brightness(99%);
+	width: 100%;
+	height: 100vh;
+	transition: 0.5s;
+}
+/*head text*/
+.headText h1 {
+	text-align: center;
+	font-size: 120px;
+	font-weight: bold;
+	color: #197CEC; 
+	padding: 200px 10px 0 0;
+	transition: 0.5s;
+}
+/*head text hover*/
+.headText h1:hover {
+	font-size: 125px;
+	color: yellow;
+}
+.headText p {
+	text-align:center; 
+	font-weight:bold; 
+	font-size:28px;
+}
+
+/*4.Social Media Icons*/
+.smedia {
+	position: absolute;
+	padding: 30px;
+	bottom: 0;
+	list-style: none;
+}
+/*social media icons list*/
+.smedia li {
+	margin: 10px;
+}
+/*social media icons image*/
+.smedia img:hover {
+	background-color: lightgrey;
+	border-radius: 12px;
+}
+
+/*5.Body ICONS*/
+/*icons structure*/
+#icons {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	text-transform: uppercase;
+	margin: 70px;
+}
+.flexbox-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;	
+}
+#icons h5 {
+	padding: 15px;
+	font-family: helvetica;
+}
+.icon {
+	margin: 15px; 
+	opacity: 0.8;
+}
+/*icon hover*/
+.icon:hover {
+	transition: 0.5s; 
+	opacity: 1;
+}
+
+/*6.First Section*/
+/*section1 strucure*/
+#body1 {
+	display: flex;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+/*left area*/
+#body1 .left1 {
+	background: url(img/laptop.png) no-repeat center center;
+	background-size: cover;
+	height: 400px;
+	width: 60%;
+	transition: 0.5s;
+}
+/*left hover*/
+#body1 .left1:hover {
+	height: 380px;
+}
+/*left text*/
+#body1 .left1 #text {
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+	color: green;
+	text-align: center;
+	margin-top: 10px;
+	transition: 0.6s;
+}
+/*right area*/
+#body1 .right1 {
+	width: 40%;
+	height: 400px;
+	margin: 10px;
+	padding: 25px;
+	text-align:center;
+}
+/*right text*/
+#body1 .right1 h1 {
+	text-transform: uppercase;
+	font-size: 37px;
+	color: #44c767;
+	padding: 10px;
+	letter-spacing: 2px;
+}
+
+/*7.Second Section*/
+/*section2 structure*/
+#body2 {
+	display: flex;
+	padding: 20px;
+	transition: 0.5s;
+}
+/*left area*/
+#body2 .left2 {
+	width:35%;
+	height: 400px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align:center;
+}
+/*left text*/
+#body2 .left2 h1 {
+	text-transform: uppercase;
+	font-size: 37px;
+	margin: 40px 15px;
+	letter-spacing: 2px;
+}
+/*right structure*/
+#body2 .right2 {
+	background: url(img/camera.png) no-repeat center center;
+	background-size: cover;
+	margin: 20px;
+	height: 400px;
+	width: 60%;
+	transition: 0.5s;
+}
+/*right hover*/
+#body2 .right2:hover {
+	height: 415px;
+}
+
+/*8.Third Section*/
+/*section3 stucture*/
+#body3 {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: 50px;
+}
+#body3 img {
+	padding: 15px;
+}
+.offer1 ul,.offer2 ul,.offer3 ul{
+	font-size: 30px;
+	list-style: none;
+	padding: 0 18px 18px;
+	transition: 0.6s;
+}
+
+/*9.Offer Area 
+/*offer structure*/
+.offerHead {
+	text-align:center; 
+	margin-top:30px;
+	transition: 0.5s;
+}
+/*offer hover*/
+.offerHead:hover {
+	opacity: 0.3;
+}
+/*offer list*/
+.offer1 ul:hover,.offer2 ul:hover,.offer3 ul:hover {
+	color: white;
+}
+/*offer text*/
+.offer1 h5,.offer2 h5,.offer3 h5{
+	font-weight:bold; 
+	font-size:25px;
+}
+/*First Offer*/
+.offer1 {
+	margin: 15px;
+	background-color: lightblue;
+	border: 1px solid;
+	border-radius: 10px;
+	padding: 0 0 18px;
+	filter: drop-shadow(4px 4px 4px black);
+}
+/*Second Offer*/
+.offer2 {
+	margin: 15px;
+	background-color: pink;
+	border: 1px solid;
+	border-radius: 10px;
+	padding: 0 0 18px;
+	filter: drop-shadow(6px 6px 7px black);
+}
+/*Third Offer*/
+.offer3 {
+	margin: 15px;
+	background-color: #44c767;
+	border: 2px solid;
+	border-radius: 10px;
+	padding: 0 0 18px;
+	filter: drop-shadow(8px 8px 10px black);
+}
+
+/*10.Quote Slider Styling*/
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+}
+/* Slides */
+.mySlides {
+	display: none;
+	padding: 80px;
+	text-align: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	color: white;
+}
+/*TextFont*/
+q {
+	font-size: 30px; 
+}
+
+/*11.Slider Style Phone Format*/
+@media (max-width: 760px) {
+	q {
+		font-size: 19px;
+	}
+/* Slides */
+	.mySlides {
+		padding: 40px;
+	}
+}
+
+/*12.Footer Area*/
+.footer {
+	justify-content: space-between;
+	text-align: center;
+	display: flex;	
+	width: 100%;
+	padding: 20px;
+	color: white;
+	background-color: #1d2124;
+}
+.footer a {
+	color: white; 
+	font-size: 18px;
+}
+/*social media icons*/
+.smediaFooter {
+	margin: 10px;
+}
+.smediaFooter img { 
+	background-color:white; 
+	padding:10px; 
+	transition:0.3s;
+}
+/*footer social media icons*/
+.smediaFooter img:hover {
+	padding: 13px;
+}
+/*footer button*/
+.button {
+	padding: 15px;
+}
+
+
+/*13.Phone Format*/
+@media (max-width: 760px) {
+
+/*Phone Format*/
+/*14.ImageHead Area*/
+.head {
+	width: 100%;
+	height: 95vh;
+}
+.headText h1 {
+	font-size: 60px;
+	padding: 100px 1px 0 1px;
+}
+.headText h1:hover {
+	font-size: 63px;
+}
+
+/*Phone Format*/
+/*15.Social Media Icons*/
+.smedia {
+	padding: 5px;
+	margin-bottom: 5px;
+	list-style: none;
+}
+.smedia li {
+	margin:5px; 
+	background-color:#FBB5F6; 
+	border-radius:12px;
+}
+/*social-media icon hover*/
+.smedia img:hover {
+	background-color: white;
+}
+/*Phone Format*/
+/*16.Body Icons*/
+#icons {
+	background-color: #FBB5F6;
+	margin: 0;
+	padding: 15px;
+}
+#icons h5 {
+	padding: 10px;
+}
+.icon {
+	margin: 10px; 
+	opacity: 0.8;
+}
+
+/*Phone Format*/
+/*17.First Section*/
+#body1 {
+	display: flex;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: black;
+}
+#body1 .left1 {
+	display: none;
+}
+#body1 .right1 {
+	width:100%;
+	height: auto;
+	margin: 0;
+	margin-bottom: 5px;
+}
+#body1 .right1 h1 {
+	font-size: 26px;
+	padding: 0;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+/*Phone Format*/
+/*18.Second Section*/
+#body2 {
+	padding: 0px;
+	transition: 0.5s;
+}
+#body2 .left2 {
+	width:100%;
+	height: auto;
+	padding-top: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#body2 .left2 h1 {
+	font-size: 26px;
+	margin: 13px 13px;
+	letter-spacing: 2px;
+}
+#body2 .right2 {
+	display: none;
+}
+
+/*Phone Format*/
+/*19.Third Section*/
+#body3 {
+	margin: 0;
+}
+
+/*Phone Format*/
+/*20.Offer Area*/
+.offerHead {
+	margin-top:40px;
+	font-size: 35px;
+}
+.offerHead:hover {
+	font-size: 37px;
+}
+#body3 img {
+	padding: 10px;
+}
+.offer1 ul,.offer2 ul,.offer3 ul{
+	font-size: 20px;
+	list-style: none;
+	padding: 0 10px 10px;
+}
+.offer1 {
+	margin: 10px;
+	border-radius: 10px;
+	padding: 0 5px 10px;
+	filter: drop-shadow(4px 4px 4px black);
+	margin-bottom: 20px;
+}
+.offer2 {
+	margin: 10px;
+	padding: 0 5px 10px;
+	filter: drop-shadow(4px 4px 4px black);
+	margin-bottom: 20px;
+}
+.offer3 {
+	margin: 10px;
+	border: 2px solid;
+	padding: 0 5px 10px;
+	filter: drop-shadow(4px 4px 4px black);
+}
+
+/*Phone Format*/
+/*21.Footer Area*/
+.footer {
+	justify-content: center;
+	padding: 15px;
+}
+/*Phone Format*/
+/*social media icons*/
+.footer a {
+	font-size: 15px;
+}
+.smediaFooter {
+	display: none;
+}
+.button {
+	display: none;
+}
+}
+
+
+/*22.Tablets and Ipads*/
+@media (min-width: 761px) and (max-width: 1220px) {
+/*ICONS*/ 
+#icons {
+	margin: 50px 30px 30px 30px;
+}
+/*Tablets and Ipads*/
+/*23.First Section*/
+#body1 {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#body1 .right1 {
+	width:40%;
+	height: 400px;
+	margin: 30px 0 0 0;
+	padding: 10px;
+	text-align:center;
+}
+#body1 .right1 h1 {
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #44c767;
+	padding: 10px;
+	letter-spacing: 2px;
+}
+/*Tablets and Ipads*/
+/*24.Second Section*/
+#body2 {
+	display: flex;
+	padding: 5px;
+	transition: 0.5s;
+}
+#body2 .left2 {
+	width: 40%;
+	height: 350px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#body2 .left2 h1 {
+	text-transform: uppercase;
+	font-size: 28px;
+	margin: 40px 0;
+	letter-spacing: 2px;
+}
+#body2 .right2 {
+	background: url(img/camera.png) no-repeat center center;
+	background-size: cover;
+	margin: 0px;
+	height: 350px;
+	width: 55%;
+	transition: 0.5s;
+}
+#body2 .right2:hover {
+	height: 365px;
+}
+}

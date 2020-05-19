@@ -1,0 +1,468 @@
+/*@Author: Emmanuel A.O
+
+This file contains the styling for the Homepage of the Designers Dream Template, this
+This files contents are outlined below.
+
+ 1.  HTML
+ 2.  Navbar
+ 3.  ImageHead Area
+ 4.  Social Media Icons
+ 5.  Body Area
+ 6.  First Section
+ 7.  Map Area
+ 8.  Contact Area
+ 9.  Section Two
+ 10. Footer Area
+ 11. Footer Social Media Icons
+
+ 12. Phone Format
+ 13. Section1
+ 14. Map
+ 15. Contact Form 
+ 16. Footer
+ 17. Footer Social Media Icons
+
+ 18. Tablet and Ipads
+ 19. Map
+ 20. Contact Form
+*/
+
+/*1.HTML*/
+* { 
+	margin: 0;
+	padding: 0;
+	font-family:Times New Roman;
+	box-sizing: border-box;
+}
+/*2.Navbar*/
+a.nav-link:hover {
+	transition: 0.5s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color:yellow;
+}
+/*navbar structure*/
+.navbar {
+	opacity: 0.7;
+	font-size: 20px; 
+	font-weight: bold;
+}
+
+/*3.Image Head Area*/
+.head {
+	background: url(img/moon.jpg) no-repeat center center;
+	background-size: cover;
+	filter: brightness(99%);
+	color: white;
+	width: 100%;
+	height: 70vh;
+	transition: 0.5s;
+}
+/*head area text*/
+.headText h1 {
+	text-align: center;
+	font-size: 115px;
+	font-weight: bold;
+	padding: 140px 0 0 0;
+	transition: 0.5s;
+}
+.headText h1:hover { 
+	font-size: 122px;
+	color: yellow;
+}
+.headText p {
+	text-align: center;
+	font-size: 25px;
+}
+
+/*4.Social Media Icons*/
+.smedia {
+	position: absolute;
+	padding-left: 20px;
+	top: 60vh;
+	list-style: none;
+}
+/*icon list*/
+.smedia li {
+	margin: 10px;
+}
+/*icon image*/
+.smedia img {
+	background-color: white;
+}
+.smedia img:hover {
+	background-color: yellow;
+}
+
+/*5.Body Area*/
+/*before section*/
+#presection {	
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+	background-color: #060c21;
+	color: white;
+	font-size: 17px;
+}
+
+/*6.Section1*/
+/*section structure*/
+#section1 {
+	flex-wrap: wrap;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	background-color: #8587A9;
+}
+.flexbox-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;	
+}
+
+/*7.Map Area*/
+/*left area*/
+.left {
+	width: 60%;
+	padding: 10px;
+	position: relative;
+	padding-bottom: 33%;
+	height: 0;
+	overflow: hidden;
+}
+.left iframe {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/*8.Contact Form*/
+/*right area*/
+.right {
+	width: 40%;
+	padding: 25px;
+	color: black;
+	text-decoration:underline;
+}
+/*form input*/
+input {
+	font-size: 25px;
+	background: none;
+	border: 2px solid black;
+	height: 40px;
+	border-radius: 5px;
+	margin: 10px;
+	width: 80%;
+}
+/*form button*/
+button {
+	color: white;
+	height:40px;
+	border: 1px solid black;
+	border-radius: 6px;
+	background-color: black;
+	padding: 10px;
+	transition: 0.5s;
+}
+/*button hover*/
+button:hover {
+	background-color: yellow;
+	color: black;
+	height:44px;
+}
+
+/*9.Section Two*/
+#section2  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 60vh;
+	background: #FFFF51;
+}
+/*our team area structure*/
+.ourTeam {
+	text-align:center; 
+	margin:0px; 
+	padding:30px; 
+	text-decoration:underline; 
+	background:#FFFF51;
+}
+.box {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	background: #060c21;
+	transition: 0.5s;
+}
+.box:hover {
+	height: 400px;
+}
+.box .imBx {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+/*team profile image*/ 
+.box .imBx img {
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 0.3;
+	transition: 0.5s;
+}
+/*team profile image hover*/ 
+.box:hover .imBx img {
+	opacity: 1;
+}
+/*box structure*/
+.box:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -1;
+}
+.box:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(40px);
+}
+.box .content {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	right: 10px;
+	height: 90px;
+	background: rgba(0,0,0,1);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+.box:hover .content {
+	opacity: 1;
+}
+/*box text*/
+.box .content h2 {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.box .content h2 span {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+/*10.Footer Area*/ 
+.footer {
+	justify-content: space-between;
+	text-align: center;
+	display: flex;	
+	width: 100%;
+	padding: 30px;
+	color: white;
+	background-color: #060c21;
+}
+/*footer text*/
+.footer a {
+	color: white;
+	font-size: 18px;
+}
+
+/*11. Footer social media icons*/
+.smediaFooter {
+	margin: 10px;
+}
+/*icon images*/
+.smediaFooter img { 
+	background-color:
+	white; padding:10px; 
+	transition:0.3s;
+}
+/*icon imag hover*/
+.smediaFooter img:hover {
+	padding: 13px;
+}
+/*Footer button*/
+.button {
+	padding: 10px;
+}
+
+
+/*12.Phone Format*/
+@media (max-width: 760px) {
+/*head Area*/
+.head {
+	width: 100%;
+	height: 70vh;
+	transition: 0.5s;
+}
+/*Phone Format*/
+/*head text*/
+.headText h1 {
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	padding: 140px 10px 0 0;
+	transition: 0.5s;
+}
+/*Phone Format*/
+/*head text hover*/
+.headText h1:hover { 
+	font-size: 63px;
+	color: yellow;
+}
+.headText p {
+	text-align: center;
+	font-size: 15px;
+}
+/*Phone Format*/
+/*13.Section 1 */
+#section1 {
+	background-color: #43627D;
+}
+/*Phone Format*/
+/*14.Map*/
+.left {
+    position: relative;
+    padding-bottom: 60%;
+    width: 100%;
+    margin: 5px;
+    overflow: hidden;
+}
+.left iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/*Phone Format*/
+/*15.Contact Form*/
+.right {
+	width: 100%;
+	padding: 20px;
+	color: black;
+}
+/*Phone Format*/
+/*form input*/
+input {
+	font-size: 18px;
+	background: none;
+	border: 2px solid black;
+	height: 40px;
+	border-radius: 5px;
+	margin: 10px;
+	width: 80%;
+}
+/*Phone Format*/
+/*form buttons*/
+button {
+	color: white;
+	height:40px;
+	border: 1px solid black;
+	border-radius: 6px;
+	background-color: black;
+	padding: 10px;
+	transition: 0.5s;
+}
+/*Phone Format*/
+/*button hover*/
+button:hover {
+	background-color: yellow;
+	color: black;
+	height:43px;
+}
+
+/*Phone Format*/
+/*16.Footer Format*/
+.footer {
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	width: 100%;
+	padding: 16px;
+	color: white;
+	background-color: #060c21;
+}
+/*Phone Format*/
+/*footer text*/
+.footer a {
+	color: white; 
+	font-size: 15px;
+}
+
+/*Phone Format*/
+/*17.Footer social media icons*/
+.smediaFooter {
+	display:none;
+}
+/*Phone Format*/
+/*footer button*/
+.button {
+	display:none;
+}
+}
+
+
+/*18.Tablets and Ipads*/
+@media (min-width: 768px) and (max-width: 1024px) {
+#section1 {
+	background-color: #43627D;
+}
+
+/*Tablets and Ipads*/
+/*19.Map*/
+.left {
+	width: 50%;
+	padding: 10px;
+	position: relative;
+	padding-bottom: 45%;
+	height: 0;
+	overflow: hidden;
+}
+.left iframe {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/*Tablets and Ipads*/
+/*20.Contact Form*/
+.right {
+	width: 50%;
+	padding: 25px;
+	color: black;
+}
+}

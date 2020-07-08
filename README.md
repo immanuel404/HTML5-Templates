@@ -1,8 +1,10 @@
 # Photography-Template-HTML5
 Alpha-version code of HTML5 Template for Photographers
-_built with html, css and javascript
+_built with html, css, bootstrap and javascript
 
 
-Complete Template: https://popularfx.com/themes/html/creative/Photo_Ultra_Template
+Finished Product: https://popularfx.com/themes/html/creative/Photo_Ultra_Two_Template
+
+++ https://popularfx.com/themes/html/corporate/Grid_IT_Template
 
 ![](preview.png)

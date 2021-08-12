@@ -5,6 +5,6 @@ _built with html, css, bootstrap and javascript
 
 Finished Product: https://popularfx.com/themes/html/creative/Photo_Ultra_Two_Template
 
-++ https://popularfx.com/themes/html/corporate/Grid_IT_Template
+++ Template designed with a Grid Layout: https://popularfx.com/themes/html/corporate/Grid_IT_Template
 
 ![](preview.png)

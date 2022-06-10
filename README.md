@@ -1,9 +1,9 @@
-Repository contains alpha-version of HTML5 Photography Template _developed with html, css, bootstrap and javascript.
-The finished product templates _Photography and IT Grid Web Template _in the links below.
+Repository contains alpha-version of HTML5 Photography Template _developed with HTML, CSS Bootstrap and JavaScript.
+Finished templates _Photography & IT Grid Web Template in links below.
 
 
 + Photography: https://popularfx.com/themes/html/creative/Photo_Ultra_Two_Template
 
-+ New IT-Grid-Template: https://popularfx.com/themes/html/corporate/Grid_IT_Template
++ NEW IT-Grid-Template: https://popularfx.com/themes/html/corporate/Grid_IT_Template
 
 ![](preview.png)

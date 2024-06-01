@@ -1,0 +1,1537 @@
+/*
+App Name: IT Grid Template
+Author: Emmanuel A.O.
+Version: 1.0
+Design and Developed by: Emmanuel A.O
+*/
+
+/*
+======================================
+[ CSS TABLE CONTENT ]
+======================================
+
+ 1. General
+ --------------HTML
+ --------------Body
+
+ 2. ScrollBar
+ --------------webkit Scrollbar
+
+ 3. Navbar
+ --------------Navbar
+
+ 4. Section One
+ --------------firstContainer
+ --------------left Section
+ --------------Right Section
+
+ 5. Section Two
+ --------------secondContainer
+ --------------Layer One:
+ ------------------------left Section
+ ------------------------Right Section
+ --------------Layer Two:
+ ------------------------Lower Grid
+
+ 6. Section Three
+ --------------thirdContainer
+ --------------left Section
+ --------------Right Section
+
+ 7. Section Four
+ --------------fourthContainer
+ --------------aboutUs
+
+ 8. Section Five
+ --------------fifthContainer
+ --------------left Section
+ --------------Right Section
+ --------------Placeholder
+ --------------Button
+ --------------Show
+
+ 9. Footer
+ --------------Footer
+ --------------Smedia footer
+ --------------webName
+
+ 9. Phone Format:
+
+ 10. Tablet Format:
+
+======================================
+[ END CSS TABLE CONTENT ]
+======================================
+*/
+
+
+$primary: #797474;
+$secondary: #494bac;
+$text: #fff;
+
+
+
+/*GENERAL*/
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+/* SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $primary;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $secondary;
+    border-radius: 10px;
+}
+
+
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $primary;
+    padding: 0 25px 0 25px;
+}
+h6 {
+    color: $text;
+    margin-bottom: 1rem;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav li {
+    padding: 15px;
+}
+nav a {
+    color: $text;
+    transition: all 0.3s ease-in;
+}
+nav a:hover {
+    color: $text;
+    border: none;
+    border-bottom: 3px solid $secondary;
+    text-decoration: none;
+}
+
+
+
+/*SECTION ONE*/
+.firstContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.firstLeft {
+    width: 45%;
+    height: 550px;
+    text-align: center;
+}
+.firstLeft img {
+    background-size: cover;
+    width: 80%;
+    height: 500px;
+}
+
+/*Right Section*/
+.firstRight {
+    text-align: center;
+    width: 55%;
+    height: 550px;
+}
+.firstRight h1 {
+    padding-top: 120px;
+    font-size: 65px;
+    margin: 0;
+    /* The typing effect */
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end),
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+.firstRight p {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+
+
+/*SECTION TWO: Layer One*/
+.secondContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.secondLeft {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        padding: 20px;
+        font-size: 50px;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
+
+/*Right Section*/
+.secondRight {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px 30px 5px 30px;
+    grid-gap: 5px;
+}
+.secondRight > div {
+    overflow: hidden;
+    height: 200px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.secondRight img {
+    height: 50px;
+    width: 50px;
+}
+.secondRight > div:hover {
+    transform: scale(0.98);
+}
+
+.secondRight > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+
+
+/*SECTION TWO: Layer Two*/
+.lowerGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px 30px 5px 30px;
+    grid-gap: 5px;
+}
+.lowerGrid > div {
+    overflow: hidden;
+    height: 200px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.lowerGrid img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.lowerGrid > div:hover {
+    transform: scale(0.98);
+}
+
+.lowerGrid > div:nth-of-type(3) {
+    grid-column: 3 / 5;
+}
+
+
+
+/*SECTION THREE*/
+.thirdContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.thirdLeft {
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px 20px 5px 30px;
+    grid-gap: 5px;
+}
+.thirdLeft > div {
+    overflow: hidden;
+    height: 200px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.thirdLeft img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.storePic {
+    background: url("../../img/board.jpg") no-repeat center center;
+    background-size: cover;
+}
+.thirdLeft > div:hover {
+    transform: scale(0.98);
+}
+
+/*Right Section*/
+.thirdRight {
+    width: 75%;
+
+    .carousel-item {
+        width: 97%;
+        height: 615px;
+    }
+    img.d-block w-100 {
+        width: 97%;
+    }
+}
+
+
+
+/*SECTION FOUR*/
+.fourthContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+.aboutUs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5px 30px 5px 30px;
+    grid-gap: 5px;
+}
+.aboutUs > div {
+    overflow: hidden;
+    height: 200px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 8px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.aboutUs img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.aboutUs > div:hover {
+    transform: scale(0.98);
+}
+
+.aboutUs > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+
+
+/*SECTION FIVE*/
+.fifthContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.fifthLeft {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 30px;
+    grid-gap: 5px;
+    color: $text;
+}
+.fifthLeft img {
+    height: 400px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Right Section*/
+.fifthRight {
+    width: 50%;
+    padding: 50px 30px;
+}
+/*placeholder text*/
+::placeholder {
+    color: $text;
+    font-size: 18px;
+}
+::-ms-input-placeholder {
+    color: $text;
+    font-size: 18px;
+}
+/*form input*/
+input {
+    width: 80%;
+    height: 50px;
+    margin: 20px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+/*form button*/
+button {
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    line-height: 0;
+    background-color: black;
+    transition: 0.5s;
+}
+/*button hover*/
+button:hover {
+    background-color: $secondary;
+    color: black;
+}
+
+
+/*DISPLAY CONTENT ON HOVER*/
+.show {
+    height: 200px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.show:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showTwo {
+    height: 200px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.showTwo:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showThree {
+    height: 200px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.showThree:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*FOOTER*/
+.footer {
+    width: 100%;
+    padding: 30px;
+    color: $text;
+    background-color: $primary;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Social Media Icons*/
+.smediaFooter img {
+  padding: 1px;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.smediaFooter img:hover {
+  filter: invert(100%);
+  transition: 0.5s;
+}
+
+/*Website Name*/
+.webName {
+    padding: 25px 10px 0 25px;
+}
+.webName a {
+    color: black;
+}
+.webName a:hover {
+    color: $text;
+}
+
+
+
+
+/* =========== Phone format ============= */
+@media (max-width: 800px) {
+
+
+/*Hides Elements*/
+.hide {
+    display: none;
+}
+
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $primary;
+    padding: 0 25px 0 25px;
+}
+h6 {
+    color: $text;
+    margin-bottom: 1rem;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav li {
+    padding: 15px;
+}
+nav a {
+    color: $text;
+    transition: all 0.3s ease-in;
+}
+nav a:hover {
+    color: $text;
+    border: none;
+    border-bottom: 3px solid $secondary;
+    text-decoration: none;
+}
+
+
+
+/*SECTION ONE*/
+.firstContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.firstLeft {
+    display: none;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.firstLeft img {
+    background-size: cover;
+    width: 80%;
+    height: 200px;
+}
+.firstRight {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.firstRight h1 {
+    padding-top: 40px;
+    font-size: 30px;
+    margin: 0;
+    /* The typing effect */
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end),
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/*Right Section*/
+.firstRight p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1px 10px 0 10px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+
+
+/*SECTION TWO: Layer One*/
+.secondContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.secondLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        display: none;
+        padding: 20px;
+        font-size: 50px;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
+
+/*Right Section*/
+.secondRight {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 5px 5px 5px;
+    grid-gap: 5px;
+}
+.secondRight > div {
+    // cursor: pointer;
+    overflow: hidden;
+    height: 150px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.secondRight img {
+    height: 50px;
+    width: 50px;
+}
+.secondRight > div:hover {
+    transform: scale(0.98);
+}
+
+.secondRight > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+/*SECTION TWO: Layer Two*/
+.lowerGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 5px 5px 5px;
+    grid-gap: 5px;
+}
+.lowerGrid > div {
+    overflow: hidden;
+    height: 150px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.lowerGrid img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.lowerGrid > div:hover {
+    transform: scale(0.98);
+}
+.lowerGrid > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+.lowerGrid > div:nth-of-type(3) {
+    grid-column: 1 / 3;
+}
+
+
+
+/*SECTION THREE*/
+.thirdContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.thirdLeft {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2px 5px 5px 5px;
+    grid-gap: 5px;
+}
+.thirdLeft > div {
+    overflow: hidden;
+    height: 150px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.thirdLeft img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.storePic {
+    background: url("../../img/board.jpg") no-repeat center center;
+    background-size: cover;
+}
+.thirdLeft > div:hover {
+    transform: scale(0.98);
+}
+
+/*Right Section*/
+.thirdRight {
+    width: 100%;
+
+    .carousel-item {
+        width: 100%;
+        height: auto;
+    }
+    img.d-block w-100 {
+        width: 100%;
+    }
+}
+
+
+
+/*SECTION FOUR*/
+.fourthContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary;
+}
+.aboutUs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px 5px 5px 5px;
+    grid-gap: 5px;
+}
+.aboutUs > div {
+    overflow: hidden;
+    height: 150px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 1px;
+        line-height: 1;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.aboutUs img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.aboutUs > div:hover {
+    transform: scale(0.98);
+}
+
+.aboutUs > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+.aboutUs > div:nth-of-type(2) {
+    grid-column: 1 / 3;
+}
+
+
+
+/*SECTION FIVE*/
+.fifthContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.fifthLeft {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px 5px;
+    grid-gap: 5px;
+    color: $text;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.fifthLeft img {
+    height: 250px;
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*Right Section*/
+.fifthRight {
+    width: 100%;
+    padding: 10px 5px;
+}
+/*input placeholder text*/
+::placeholder {
+    color: $text;
+    font-size: 15px;
+}
+::-ms-input-placeholder {
+    color: $text;
+    font-size: 15px;
+}
+/*form input*/
+input {
+    width: 80%;
+    height: 50px;
+    margin: 20px;
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+/*form button*/
+button {
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    line-height: 0;
+    background-color: black;
+    transition: 0.5s;
+}
+/*button hover*/
+button:hover {
+    background-color: $secondary;
+    color: black;
+}
+
+/*DISPLAY CONTENT ON HOVER*/
+.show {
+    height: 150px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.show:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showTwo {
+    height: 150px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.showTwo:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showThree {
+    height: 150px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.showThree:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+
+
+
+/* =========== Tablet Format ============= */
+@media (min-width: 801px) and (max-width: 1224px) {
+
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $primary;
+    padding: 0 25px 0 25px;
+}
+h6 {
+    color: $text;
+    margin-bottom: 1rem;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav li {
+    padding: 15px;
+}
+nav a {
+    color: $text;
+    transition: all 0.3s ease-in;
+}
+nav a:hover {
+    color: $text;
+    border: none;
+    border-bottom: 3px solid $secondary;
+    text-decoration: none;
+}
+
+
+
+/*SECTION ONE*/
+.firstContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.firstLeft {
+    display: none;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.firstLeft img {
+    background-size: cover;
+    width: 80%;
+    height: 200px;
+}
+
+/*Right Section*/
+.firstRight {
+    width: 100%;
+    height: 360px;
+    text-align: center;
+}
+.firstRight h1 {
+    padding-top: 70px;
+    font-size: 50px;
+    margin: 0;
+    /* The typing effect */
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end),
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+.firstRight p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px 0 10px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+
+/*SECTION TWO: Layer One*/
+.secondContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.secondLeft {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        padding: 20px;
+        font-size: 40px;
+        line-height: 1.6;
+        text-align: center;
+    }
+}
+
+/*Right Section*/
+.secondRight {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px 15px 5px 15px;
+    grid-gap: 5px;
+}
+.secondRight > div {
+    overflow: hidden;
+    height: 190px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.secondRight img {
+    height: 50px;
+    width: 50px;
+}
+.secondRight > div:hover {
+    transform: scale(0.98);
+}
+.secondRight > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+
+/*SECTION TWO: Layer Two*/
+.lowerGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px 15px 5px 15px;
+    grid-gap: 5px;
+}
+.lowerGrid > div {
+    overflow: hidden;
+    height: 190px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.lowerGrid img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.lowerGrid > div:hover {
+    transform: scale(0.98);
+}
+.lowerGrid > div:nth-of-type(3) {
+    grid-column: 3 / 5;
+}
+
+
+
+/*SECTION THREE*/
+.thirdContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.thirdLeft {
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px 15px 5px 15px;
+    grid-gap: 5px;
+}
+.thirdLeft > div {
+    overflow: hidden;
+    height: 165px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 5px;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.thirdLeft img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.storePic {
+    background: url("../../img/board.jpg") no-repeat center center;
+    background-size: cover;
+}
+.thirdLeft > div:hover {
+    transform: scale(0.98);
+}
+
+/*Right Section*/
+.thirdRight {
+    width: 75%;
+
+    .carousel-item {
+        width: 97%;
+        height: auto;
+    }
+    img.d-block w-100 {
+        width: 97%;
+    }
+}
+
+
+
+/*SECTION FOUR*/
+.fourthContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary;
+}
+.aboutUs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5px 15px 5px 15px;
+    grid-gap: 5px;
+}
+.aboutUs > div {
+    overflow: hidden;
+    height: 190px;
+    box-shadow: 5px 5px 5px;
+    background-color: $secondary;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+
+    p, h2 {
+        color: $text;
+        text-align: center;
+        padding: 1px;
+        line-height: 1;
+    }
+    p:hover, h2:hover {
+        z-index: 0;
+    }
+}
+.aboutUs img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+.aboutUs > div:hover {
+    transform: scale(0.98);
+}
+
+.aboutUs > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+
+
+/*SECTION FIVE*/
+.fifthContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primary;
+}
+
+/*Left Section*/
+.fifthLeft {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px 5px;
+    grid-gap: 5px;
+    color: $text;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.fifthLeft img {
+    padding: 5px;
+    height: 400px;
+    max-width: 90%;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+/*Right Section*/
+.fifthRight {
+    width: 100%;
+    padding: 20px 5px;
+}
+/*input placeholder text*/
+::placeholder {
+    color: $text;
+    font-size: 15px;
+}
+::-ms-input-placeholder {
+    color: $text;
+    font-size: 15px;
+}
+/*form input*/
+input {
+    width: 60%;
+    height: 50px;
+    margin: 20px;
+    padding: 0px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+/*form button*/
+button {
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    line-height: 0;
+    background-color: black;
+    transition: 0.5s;
+}
+/*button hover*/
+button:hover {
+    background-color: $secondary;
+    color: black;
+}
+
+
+/*DISPLAY CONTENT ON HOVER*/
+.showTwo {
+    height: 155px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.showTwo:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showThree {
+    height: 180px;
+    width: auto;
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.showThree:hover {
+    z-index: 1;
+    opacity: 0.9;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+}

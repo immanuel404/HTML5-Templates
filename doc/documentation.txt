@@ -1,0 +1,123 @@
+
+IT Grid Template:
+A set of three single-page HTML5 Template for IT corporations and professionals. 
+Developed with HTML5 & CSS3, it is fully Responsive & Modern. 
+It features Modern grid Desing with three thmes to choose from: standard theme, dark mode theme and neumorphic theme. 
+The code is easy to read and each theme page file has been compartmentalised for Easy Edits. 
+Free icons & stock images are also included. its has been W3C Validated. 
+
+
+By: Emmanuel A.O
+  Created: 02-July-2020
+  email: web4citizen@gmail.com
+
+Changelog:
+  Version 1.0 | 02-July-2020
+  Updated: First version    
+  Initial Release
+
+
+The Images and Icons used in this template are free and allow for free product commercial use without attribution required. The Images and Icons are obtained from:
+LICENCE: 
+Undraw: https://undraw.co/license
+Pixabay: https://pixabay.com/service/license/
+
+
+FILES INCLUDED:
+
+  index.html_____________The introductory page.
+  style.css______________The homepage styling.
+
+  standard.html__________The stanrdard theme page.
+  standard.css___________The standard theme styling.
+  standard.scss__________The standard theme styling.
+
+  dark.html______________The dark theme page.
+  dark.css_______________The dark theme styling.
+  dark.scss______________The dark theme styling.
+
+  neumorphic.html________The neumorphic theme page.
+  neumorphic.css_________The neumorphic theme styling.
+  neumorphic.scss________The neumorphic theme styling.
+
+  bootstrap______________bootstrap CSS & JS files
+  jquery.min.js__________jQuery file.
+
+  documentation.txt______Documentation in txt format.
+
+
+
+Images Used:
+    info.png: https://www.flaticon.com/free-icon/help-information-button-with-a-hand-with-a-finger-pointing-on-it_44286?term=IT&page=1&position=84
+    head.svg: https://undraw.co/illustrations
+    vr.jpg: https://pixabay.com/photos/vr-virtual-virtual-reality-3460451/
+    board.jpg: https://pixabay.com/photos/board-electronics-computer-453758/  
+    map.jpg: https://pixabay.com/photos/map-europe-globe-countries-states-3483539/
+
+Icons Used:
+    facebook.png:  https://image.flaticon.com/icons/svg/2111/2111392.svg
+    linkedin.png:  https://image.flaticon.com/icons/svg/2111/2111532.svg
+    twitter.png:   https://image.flaticon.com/icons/svg/733/733635.svg
+    user.png: https://www.flaticon.com/free-icon/man_892781?term=man&page=1&position=5
+    info.png: https://www.flaticon.com/free-icon/help-information-button-with-a-hand-with-a-finger-pointing-on-it_44286?term=IT&page=1&position=84
+    illuminate.png: https://image.flaticon.com/icons/svg/121/121166.svg"
+    coding.png: https://www.flaticon.com/free-icon/coding_942195?term=technology&page=1&position=67
+    shopping: https://www.flaticon.com/free-icon/shopping-cart_833400?term=shopping%20cart&page=1&position=4
+
+
+
+Fonts: "Times New Roman" & 'Helvetica'
+
+::Navbar developed with Bootstrap version 4.4.1.
+
+
+
+HTML & CSS Structure:
+This Template has been compartmentalized into mainly 3 Sections for the three Themes, for easy read and edits.
+
+HTML files holds the contents while CCS files holds the styling and design.
+
+1. Root Directory: index.html file & style.css in the root file
+
+2. Standard: standard.html file & style.css file
+
+3. Dark: dark.html file & style.css file
+
+4. Neumorphic: neumorphic.html file & style.css file
+
+5. Bootstrap: containing Bootstrap CSS & JS Files
+
+6. Doc: containing documentation.
+
+
+
+HTML Files:
+- Each file document is full of comments to explain each section area, and direct you to where to edit texts and images
+- Each page head contains the Website title, Favicon and links to necessary files.
+-The body contains the contents that have been divided into sections.
+- At the bottom of each html file contains any JavaScript and jquery codes used in the specific page. 
+- For easy navigation all HTML Files possess structure with the following heading:
+    Navbar
+    Section One
+    Section Two
+    Section...
+    Footer
+
+
+CSS & SCSS Files:
+- Comments have also been used to explain each section area. 
+- Classes and Id's have been structured neatly to follow the html page format for easy read. 
+- The top contains styling for laptop and desktop devices while the later areas contain styling for mobile phones and tablets respectively.
+- For easy navigation all CCS Files possess a Table of Contents Menu with the following structure:
+    General
+    Navbar
+    Section One
+    Section...
+    Footer
+    Phone Format
+    Tablet Format.
+
+
+Note:
+If you have any questions please contact me via e-mail or through my profile page. I’ll help you as soon as possible.
+

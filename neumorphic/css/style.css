@@ -108,7 +108,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff;
+  background-color: #eee;
   padding: 0 25px 0 25px;
 }
 
@@ -156,7 +156,7 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 /*Left Section*/
@@ -231,7 +231,7 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 /*Left Section*/
@@ -275,7 +275,7 @@ nav a:hover {
   height: 200px;
   -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
           box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-  background-color: #fff;
+  background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,7 +392,7 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 /*Left Section*/
@@ -411,7 +411,7 @@ nav a:hover {
   height: 200px;
   -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
           box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-  background-color: #fff;
+  background-color: #eee;
   font-family: 'Roboto', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,7 +485,7 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 .aboutUs {
@@ -503,7 +503,7 @@ nav a:hover {
   height: 200px;
   -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
           box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-  background-color: #fff;
+  background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +563,7 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 /*Left Section*/
@@ -790,7 +790,7 @@ button:hover {
   width: 100%;
   padding: 30px;
   color: #494bac;
-  background-color: #fff;
+  background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
